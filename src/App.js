@@ -6,7 +6,8 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Header from './components/Header';
+import Header from './components/header/Header';
+import Home from './components/home/Home';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <div className="App">
         <Switch>
           <Route path = '/checkout'>
+          <Header></Header>
             <h1>checkout</h1>
           </Route>
           <Route path = '/login'>
@@ -22,6 +24,7 @@ function App() {
           </Route>
           <Route path = '/'>
             <Header></Header>
+            <Home />
             <h1>Home</h1>
           </Route>
         </Switch>
